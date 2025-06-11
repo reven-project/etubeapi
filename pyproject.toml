@@ -8,12 +8,12 @@ license = "Apache-2.0"
 description = "CLI tool that allows for interacting with Shimano's E-Tube API"
 readme = { file = "README.md", content-type = "text/markdown" }
 dependencies = [
-    "httpx == 0.28.1",
-    "beautifulsoup4 == 4.13.4",
-    "typer==0.16.0",
-    "rich==13.9.4",
-    "cattrs==25.1.0",
-    "PyYAML==6.0.2",
+    "httpx~=0.28.1",
+    "beautifulsoup4~=4.13",
+    "typer~=0.16.0",
+    "rich~=13.9",
+    "cattrs~=25.1",
+    "PyYAML~=6.0",
 ]
 dynamic = ["version"]
 
