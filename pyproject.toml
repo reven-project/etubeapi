@@ -18,21 +18,14 @@ dependencies = [
 dynamic = ["version"]
 
 [project.urls]
-
+Repository = "https://github.com/reven-project/etubeapi.git"
 
 [project.scripts]
 etubeapi = "etubeapi.main:main"
 
 
 [build-system]
-requires = ["pdm-backend >= 2.4.4", "setuptools", "wheel"]
-build-backend = "pdm.backend"
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
 
-[tool.pdm]
-distribution = true
-
-[tool.pdm.build]
-run-setuptools = true
-
-[tool.pdm.version]
-source = "scm"
+[tool.setuptools_scm]
