@@ -1,0 +1,38 @@
+[project]
+name = "etubeapi"
+authors = [
+    { name = "Norbert Arkadiusz Görke", email = "me@ngorke.dev" },
+    { name = "Magnust Hektoen Steensland", email = "mag.steensland@gmail.com" },
+]
+license = "Apache-2.0"
+description = "CLI tool that allows for interacting with Shimano's E-Tube API"
+readme = { file = "README.md", content-type = "text/markdown" }
+dependencies = [
+    "httpx == 0.28.1",
+    "beautifulsoup4 == 4.13.4",
+    "typer==0.16.0",
+    "rich==13.9.4",
+    "cattrs==25.1.0",
+    "PyYAML==6.0.2",
+]
+dynamic = ["version"]
+
+[project.urls]
+
+
+[project.scripts]
+etubeapi = "etubeapi.main:main"
+
+
+[build-system]
+requires = ["pdm-backend >= 2.4.4", "setuptools", "wheel"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.pdm.build]
+run-setuptools = true
+
+[tool.pdm.version]
+source = "scm"

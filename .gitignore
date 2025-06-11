@@ -1,0 +1,4 @@
+/dist
+/.pdm*
+__pycache__/
+/**/etubeapi.egg-info
