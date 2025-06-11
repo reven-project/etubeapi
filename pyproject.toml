@@ -23,7 +23,6 @@ Repository = "https://github.com/reven-project/etubeapi.git"
 [project.scripts]
 etubeapi = "etubeapi.main:main"
 
-
 [build-system]
 requires = ["setuptools", "setuptools-scm"]
 build-backend = "setuptools.build_meta"
